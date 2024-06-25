@@ -1,0 +1,244 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/background.jpg" );
+    overflow-x: hidden;
+    
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  height: auto;
+
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  color: black;
+  background-color:red;
+  color: #333;
+  border-radius: 4px;
+}
+
+section {
+    padding: 2rem;
+}
+#logo{
+    height: 60px;
+    width: 80px;
+    border-radius: 100%;
+    
+}
+#gallery h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 3px red;
+}
+
+#gallery .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+}
+.gallery-container img:hover{
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px #333);
+  transition: 0.5s;
+}
+
+
+
+#gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    display:grid;
+}
+#file-complaint{
+    position: relative;
+  
+    background: linear-gradient(45deg, red,black);
+    color:rgb(255, 255, 255) ;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+}
+#file-complaint h2 {
+    text-align: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+input, button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 1rem;
+    background-color:limegreen;
+    color: black;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.section-p1 {
+    padding: 40px 80px;
+    background:linear-gradient( 180deg,black , red);
+    color: #f8f9fa;
+  }
+  
+  .section-m1 {
+    margin: 40px 0;
+    color: #f8f9fa;
+  }
+
+
+.col a{
+    color: #f8f9fa;
+}
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  color: #f8f9fa;
+}
+
+footer .logo{
+  margin-bottom: 30px;
+}
+
+footer h4{
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p{
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin: 10px;
+}
+
+footer .follow{
+  margin-top: 20px;
+}
+
+footer .follow i{
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .install .row img{
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+footer .install img{
+  margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: #088178;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar li {
+        margin: 0.5rem 0;
+    }
+    
+    #gallery .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #file-complaint{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
